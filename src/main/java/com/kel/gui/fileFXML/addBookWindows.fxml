@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <GridPane gridLinesVisible="true" layoutX="154.0" prefHeight="300.0" prefWidth="245.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="125.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="120.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Subtitle" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Name author" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Surname author" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Type Book" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Language" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Publisher" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Year Published" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="Title" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="titleTextField" GridPane.columnIndex="1" />
+                <TextField fx:id="subtitleTextField" prefHeight="25.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="nameAuthorTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="surnameAuthorTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="publisherTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextField fx:id="yearPublishedTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <ChoiceBox fx:id="typeBookChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Thriller" />
+                            <String fx:value="Science_fiction_Fantasy" />
+                            <String fx:value="Thriller" />
+                            <String fx:value="Comedy" />
+                            <String fx:value="Science" />
+                            <String fx:value="Biography" />
+                            <String fx:value="Business_Finance_Law" />
+                            <String fx:value="Children" />
+                            <String fx:value="Comics" />
+                            <String fx:value="Computing_Internet" />
+                            <String fx:value="Crime" />
+                            <String fx:value="Education" />
+                            <String fx:value="Food_Drink" />
+                            <String fx:value="Health_Family_Lifestyle" />
+                            <String fx:value="History" />
+                            <String fx:value="Home_Garden" />
+                            <String fx:value="Languages" />
+                            <String fx:value="Mind_Body_Spirit" />
+                            <String fx:value="Music_Stage_Screen" />
+                            <String fx:value="Poetry_Drama_Criticism" />
+                            <String fx:value="Reference" />
+                            <String fx:value="Religion_Spirituality" />
+                            <String fx:value="Romance" />
+                            <String fx:value="School_Books" />
+                            <String fx:value="Society_Politics_Philosophy" />
+                            <String fx:value="Sports_Hobbies_Games" />
+                            <String fx:value="Travel_Holiday" />
+                            <String fx:value="Young_Adult" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <ChoiceBox fx:id="languageChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="albański"/>
+                            <String fx:value="angielski"/>
+                            <String fx:value="białoruski"/>
+                            <String fx:value="bułgarski"/>
+                            <String fx:value="chiński"/>
+                            <String fx:value="chorwacki"/>
+                            <String fx:value="czeski"/>
+                            <String fx:value="duński"/>
+                            <String fx:value="esperanto"/>
+                            <String fx:value="estoński"/>
+                            <String fx:value="fiński"/>
+                            <String fx:value="francuski"/>
+                            <String fx:value="grecki"/>
+                            <String fx:value="hebrajski"/>
+                            <String fx:value="hiszpański"/>
+                            <String fx:value="holenderski"/>
+                            <String fx:value="islandzki"/>
+                            <String fx:value="japoński"/>
+                            <String fx:value="koreański"/>
+                            <String fx:value="litewski"/>
+                            <String fx:value="łaciński"/>
+                            <String fx:value="łotewski"/>
+                            <String fx:value="macedoński"/>
+                            <String fx:value="niemiecki"/>
+                            <String fx:value="norweski"/>
+                            <String fx:value="polski"/>
+                            <String fx:value="portugalski"/>
+                            <String fx:value="rosyjski"/>
+                            <String fx:value="rumuński "/>
+                            <String fx:value="serbski"/>
+                            <String fx:value="słowacki"/>
+                            <String fx:value="słoweński"/>
+                            <String fx:value="szwedzki"/>
+                            <String fx:value="turecki"/>
+                            <String fx:value="ukraiński"/>
+                            <String fx:value="węgierski"/>
+                            <String fx:value="włoski"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </children>
+        </GridPane>
+        <Button fx:id="buttonAddBook" blendMode="DARKEN" disable="true" layoutX="55.0" layoutY="125.0" mnemonicParsing="false" text="Add Book" textAlignment="CENTER" />
+    </children>
+</Pane>
